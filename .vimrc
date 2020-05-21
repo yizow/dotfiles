@@ -24,7 +24,7 @@ Plugin 'rking/ag.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 " need to manually run in vim: ":call mkdp#util#install()" after following
-Plugin 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install' }
+Plugin 'iamcco/markdown-preview.nvim'
 
 call vundle#end()
 if has('syntax')
@@ -46,6 +46,9 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
 autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
+
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
 
 " markdown-preview.nvim
 let g:mkdp_browser = 'firefox'

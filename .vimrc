@@ -45,7 +45,7 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 
-autocmd FileType python setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4 expandtab
 
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
